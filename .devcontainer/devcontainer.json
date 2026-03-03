@@ -18,7 +18,12 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/LeonardHd/dev-container-features/persist:0": {
+            "paths": [
+                ".config/gh/hosts.yml"
+            ]
+        }
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
