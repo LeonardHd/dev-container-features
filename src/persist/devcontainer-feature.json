@@ -1,0 +1,23 @@
+{
+    "name": "Persist Paths",
+    "id": "persist",
+    "version": "0.1.0",
+    "description": "Persist arbitrary files and directories across dev container rebuilds using a Docker volume.",
+    "options": {
+        "paths": {
+            "type": "string",
+            "default": "",
+            "description": "JSON array of paths to persist, e.g. [\".config/gh/hosts.yml\", \".ssh/known_hosts\", \".azure\"]. Paths without a leading '/' are relative to $HOME."
+        }
+    },
+    "mounts": [
+        {
+            "source": "${devcontainerId}-persist",
+            "target": "/dc/persist",
+            "type": "volume"
+        }
+    ],
+    "onCreateCommand": {
+        "persist": "/usr/local/share/devcontainer-features/persist/scripts/oncreate.sh"
+    }
+}

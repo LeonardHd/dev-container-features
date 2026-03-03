@@ -1,0 +1,18 @@
+{
+    "persist_file": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "persist": {
+                "paths": [".config/test-persist/settings.json"]
+            }
+        }
+    },
+    "persist_multiple": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "persist": {
+                "paths": [".config/test-persist/settings.json", ".local/share/test-data/"]
+            }
+        }
+    }
+}
