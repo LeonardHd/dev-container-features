@@ -4,6 +4,11 @@
       "version": "2.16.0",
       "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:31ef1bbfde793bcc62c52fa847c02a15fe659d69e48b2d8c1cfbd4db95f97cf7",
       "integrity": "sha256:31ef1bbfde793bcc62c52fa847c02a15fe659d69e48b2d8c1cfbd4db95f97cf7"
+    },
+    "ghcr.io/LeonardHd/dev-container-features/persist:0": {
+      "version": "0.1.0",
+      "resolved": "ghcr.io/leonardhd/dev-container-features/persist@sha256:19d1c2a5387bcc90ada9b2f68472a5eb929aa7fb796172b102dd32ec58566d82",
+      "integrity": "sha256:19d1c2a5387bcc90ada9b2f68472a5eb929aa7fb796172b102dd32ec58566d82"
     }
   }
 }
